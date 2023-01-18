@@ -7,7 +7,7 @@ import json
 from discord_webhook import DiscordWebhook
 
 search_libertyville_url = "https://www.autonationtoyotalibertyville.com/apis/widget/INVENTORY_LISTING_DEFAULT_AUTO_NEW:inventory-data-bus1/getInventory?model=Sienna&normalDriveLine=AWD"
-DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1065366415630147714/-5EfNgobI9Pize0xAcKiqyjjF9vJR51cXDzHS7HZMknFrYgvAuBqY67coxRrjdoyt6UR"
+DISCORD_WEBHOOK = ""
 
 def get_data(url):
     r = requests.get(url)
