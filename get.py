@@ -4,7 +4,6 @@ This script will scrape inventory (Sienna AWD) from Toyota Libertyville and outp
 
 import requests
 import json
-from bs4 import BeautifulSoup
 from discord_webhook import DiscordWebhook
 
 search_libertyville_url = "https://www.autonationtoyotalibertyville.com/apis/widget/INVENTORY_LISTING_DEFAULT_AUTO_NEW:inventory-data-bus1/getInventory?model=Sienna&normalDriveLine=AWD"
