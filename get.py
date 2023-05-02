@@ -21,7 +21,7 @@ def pretty_print(response):
 
 def parse_data(data):
     title = "Toyota Libertyville"
-    heading = "status - inventory date - VIN - msrp - interior color - exterior color - trim"
+    heading = "status - inventory date - VIN - msrp - exterior color - interior color - trim"
     count = 1
     resp = data['pageInfo']
 
@@ -29,8 +29,8 @@ def parse_data(data):
     discord_webhook(send_headings)
 
     for key in resp['trackingData']:
-        #print("{0}. {1} - {2} - {3} - {4} - {5} - {6} - {7}".format(count, key['status'], key['inventoryDate'] ,key['vin'], key['msrp'], key['interiorColor'], key['exteriorColor'], key['trim']))
-        inventory_data = ("{0}. {1} - {2} - {3} - {4} - {5} - {6} - {7}".format(count, key['status'], key['inventoryDate'] ,key['vin'], key['msrp'], key['interiorColor'], key['exteriorColor'], key['trim']))
+        #print("{0}. {1} - {2} - {3} - {4} - {5} - {6} - {7}".format(count, key['status'], key['inventoryDate'] ,key['vin'], key['msrp'], key['exteriorColor'], key['interiorColor'], key['trim']))
+        inventory_data = ("{0}. {1} - {2} - {3} - {4} - {5} - {6} - {7}".format(count, key['status'], key['inventoryDate'] ,key['vin'], key['msrp'], key['exteriorColor'], key['interiorColor'], key['trim']))
         discord_webhook(inventory_data)
         count += 1
 
