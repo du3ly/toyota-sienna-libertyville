@@ -1,6 +1,6 @@
 FROM python:slim-bullseye
 
-LABEL version="1.0"
+LABEL version="1.0.1"
 
 COPY requirements.txt /opt/app/requirements.txt
 WORKDIR /opt/app
